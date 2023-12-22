@@ -1,1 +1,1 @@
-# micro-service spring cloud demo
+# micro-service demo
