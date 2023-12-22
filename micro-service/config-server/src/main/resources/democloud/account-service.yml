@@ -1,0 +1,26 @@
+server:
+  port: 8501
+
+eureka:
+  client:
+    instance:
+      hostname: localhost
+    serviceUrl:
+      defaultZone: http://localhost:8500/eureka/
+
+spring:
+  application:
+    name: account-service
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: create
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mydatabase
+    username: spcloud
+    password: spcloud
+
+
+

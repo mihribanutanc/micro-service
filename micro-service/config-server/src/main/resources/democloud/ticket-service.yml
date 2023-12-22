@@ -1,0 +1,28 @@
+server:
+  port: 8502
+
+spring:
+  application:
+    name: ticket-service
+
+  data:
+    elasticsearch:
+      cluster-nodes: localhost:9200
+      cluster-name: docker-cluster
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/microserviceapp
+    username: root
+    password: microservice-app
+
+  jpa:
+    database: mysql
+    dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: none
+eureka:
+  client:
+    instance:
+      hostname: localhost
+    serviceUrl:
+      defaultZone: http://localhost:8500/eureka/
