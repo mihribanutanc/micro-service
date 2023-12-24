@@ -1,0 +1,10 @@
+/Users/mihribanutanc/workspace/my-projects/micro-service/micro-service/ticket-service/src/main/java/com/example/ticketservice/model/PriorityType.java
+/Users/mihribanutanc/workspace/my-projects/micro-service/micro-service/ticket-service/src/main/java/com/example/ticketservice/model/Ticket.java
+/Users/mihribanutanc/workspace/my-projects/micro-service/micro-service/ticket-service/src/main/java/com/example/ticketservice/model/BaseEntityModel.java
+/Users/mihribanutanc/workspace/my-projects/micro-service/micro-service/ticket-service/src/main/java/com/example/ticketservice/api/TicketApi.java
+/Users/mihribanutanc/workspace/my-projects/micro-service/micro-service/ticket-service/src/main/java/com/example/ticketservice/mapper/TicketMapper.java
+/Users/mihribanutanc/workspace/my-projects/micro-service/micro-service/ticket-service/src/main/java/com/example/ticketservice/service/TicketService.java
+/Users/mihribanutanc/workspace/my-projects/micro-service/micro-service/ticket-service/src/main/java/com/example/ticketservice/dto/TicketDto.java
+/Users/mihribanutanc/workspace/my-projects/micro-service/micro-service/ticket-service/src/main/java/com/example/ticketservice/repository/TicketRepository.java
+/Users/mihribanutanc/workspace/my-projects/micro-service/micro-service/ticket-service/src/main/java/com/example/ticketservice/TicketApplication.java
+/Users/mihribanutanc/workspace/my-projects/micro-service/micro-service/ticket-service/src/main/java/com/example/ticketservice/model/TicketStatus.java

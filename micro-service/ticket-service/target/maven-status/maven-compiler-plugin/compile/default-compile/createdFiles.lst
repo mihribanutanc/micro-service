@@ -1,0 +1,12 @@
+com/example/ticketservice/dto/TicketDto.class
+com/example/ticketservice/dto/TicketDto$TicketDtoBuilder.class
+com/example/ticketservice/model/TicketStatus.class
+com/example/ticketservice/TicketApplication.class
+com/example/ticketservice/model/Ticket.class
+com/example/ticketservice/model/Ticket$TicketBuilder.class
+com/example/ticketservice/model/PriorityType.class
+com/example/ticketservice/repository/TicketRepository.class
+com/example/ticketservice/api/TicketApi.class
+com/example/ticketservice/mapper/TicketMapper.class
+com/example/ticketservice/model/BaseEntityModel.class
+com/example/ticketservice/service/TicketService.class
