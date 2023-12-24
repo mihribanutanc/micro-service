@@ -1,11 +1,8 @@
 package com.example.ticketservice.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import jakarta.persistence.*;
+import lombok.*;
+import org.hibernate.annotations.GenericGenerator;
 
 import java.util.Date;
 import java.util.UUID;
@@ -15,21 +12,33 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Ticket {
+public class Ticket extends BaseEntityModel{
 
 
     @Id
-    private String id = UUID.randomUUID().toString();
+    @GenericGenerator(name = "UUIDGenerator", strategy = "uuid2")
+    @GeneratedValue(generator = "UUIDGenerator")
+    @Column(name = "id", updatable = false, nullable = false)
+    protected UUID id;
 
-
+    @Column(name = "description")
     private String description;
 
+    @Column(name = "notes")
     private String notes;
 
+    @Column(name = "assignee")
     private String assignee;
 
-
+    @Column(name = "ticket_date")
     private Date ticketDate;
 
+    @Enumerated(EnumType.STRING)
+    @Column(name = "priority_type")
+    private PriorityType priorityType;
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = "ticket_status")
+    private TicketStatus ticketStatus;
 
 }

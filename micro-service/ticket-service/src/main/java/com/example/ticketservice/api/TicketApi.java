@@ -17,7 +17,7 @@ public class TicketApi {
 
     @PostMapping
     public Ticket create(@RequestBody Ticket ticket){
-        return ticketService.create(ticket);
+        return ticketService.save(ticket);
     }
 
 }
