@@ -1,9 +1,11 @@
 package com.example.ticketservice.service;
 
 import com.example.ticketservice.dto.TicketDto;
+import com.example.ticketservice.mapper.TicketMapper;
 import com.example.ticketservice.model.Ticket;
 import com.example.ticketservice.repository.TicketRepository;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -11,17 +13,22 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class TicketService {
 
-    private TicketRepository ticketRepository;
+    private final TicketRepository ticketRepository;
 
-    public Ticket save(Ticket ticket){
+    private final TicketMapper ticketMapper;
 
-        return ticketRepository.save(ticket);
+    public TicketDto save(TicketDto ticketDto){
+        Ticket ticket = ticketMapper.toEntity(ticketDto);
+        Ticket savedTicket = ticketRepository.save(ticket);
+        return ticketMapper.toDto(savedTicket);
     };
 
     public TicketDto update(String id, TicketDto ticketDto){
+
+
         return null;
     };
 

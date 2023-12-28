@@ -1,5 +1,6 @@
 package com.example.ticketservice.api;
 
+import com.example.ticketservice.dto.TicketDto;
 import com.example.ticketservice.model.Ticket;
 import com.example.ticketservice.service.TicketService;
 import lombok.AllArgsConstructor;
@@ -16,8 +17,8 @@ public class TicketApi {
     private TicketService ticketService;
 
     @PostMapping
-    public Ticket create(@RequestBody Ticket ticket){
-        return ticketService.save(ticket);
+    public TicketDto create(@RequestBody TicketDto ticketDto){
+        return ticketService.save(ticketDto);
     }
 
 }

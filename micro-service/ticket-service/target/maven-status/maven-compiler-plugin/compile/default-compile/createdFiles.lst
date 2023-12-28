@@ -1,5 +1,6 @@
 com/example/ticketservice/dto/TicketDto.class
 com/example/ticketservice/dto/TicketDto$TicketDtoBuilder.class
+com/example/ticketservice/mapper/TicketMapperImpl.class
 com/example/ticketservice/model/TicketStatus.class
 com/example/ticketservice/TicketApplication.class
 com/example/ticketservice/model/Ticket.class

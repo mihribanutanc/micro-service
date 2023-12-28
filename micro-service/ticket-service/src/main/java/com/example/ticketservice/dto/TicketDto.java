@@ -16,8 +16,6 @@ import java.util.UUID;
 @NoArgsConstructor
 public class TicketDto {
 
-    protected UUID id;
-
     private String description;
 
     private String notes;
